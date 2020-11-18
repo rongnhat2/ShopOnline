@@ -9,7 +9,7 @@
 								<i class="fa fa-truck" aria-hidden="true"></i>
 							</div>
 							<div class="service-info">
-								<h4>FREE SHIPPING</h4>
+								<h4>Miễn phí giao hàng</h4>
 								<p>Free shipping over $100</p>
 							</div>
 						</div>
@@ -20,8 +20,8 @@
 								<i class="fa fa-money" aria-hidden="true"></i>
 							</div>
 							<div class="service-info">
-								<h4>MONEY BACK GUARANTEE</h4>
-								<p>Send to you within 24 hours</p>
+								<h4>Chính sách đổi trả</h4>
+								<p>Đổi trả hàng sau 24h</p>
 							</div>
 						</div>
 					</div>
@@ -31,8 +31,8 @@
 								<i class="fa fa-phone" aria-hidden="true"></i>
 							</div>
 							<div class="service-info">
-								<h4>24 hours support</h4>
-								<p>Call : 021 546 256658</p>
+								<h4>Hỗ trợ trực tuyến</h4>
+								<p> 0123 462 5658</p>
 							</div>
 						</div>
 					</div>

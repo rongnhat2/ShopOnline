@@ -3,311 +3,63 @@
 		<section class="arrival-area section-padding">
 			<div class="container">
 				<div class="section-titel">
-					<h3>NEW ARRIVAL</h3>
+					<h3>Sản phẩm nổi bật</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor psum dolor sit ame</p>
 				</div>
 				<div class="row custom-row">
 					<div class="new-arrival-owl indicatorstyle">
-						<!-- Single Product -->
-						<div class="col-md-12 col-left-right">
-							<div class="single-product">
-								<div class="product-titel">
-									<h4><a href="#">Eletria ostma</a></h4>
-									<div class="rating-box">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
+						<?php foreach ($best_items as $key => $value): ?>
+							<!-- Single Product -->
+							<div class="col-md-12 col-left-right">
+								<div class="single-product">
+									<input type="hidden" class="id_item" name="id" value="<?php echo $value->id ?>">
+									<div class="product-titel">
+										<h4><a href="{{ route('customer.product_detail', ['slug' => $value->slug]) }}"><?php echo $value->name ?></a></h4>
+										<div class="rating-box">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</div>
 									</div>
-								</div>
-								<div class="box-content">
-									<div class="product-img">
-										<a href="#"><img src="img/product/arival-pro-1.jpg" alt="" /></a>
+									<div class="box-content">
+										<div class="product-img">
+											<a href="{{ route('customer.product_detail', ['slug' => $value->slug]) }}"><img src="{{ asset($value->image_url) }}" alt="None Image" /></a>
+										</div>
+									<div class="overlay-content">
+										<p><?php echo $value->description ?></p>
+										<ul>
+											<li>
+												<a title="Add to cart" href="#">
+													<i class="flaticon-commerce"></i>
+												</a>
+											</li>
+											<li>
+												<a title="Quick View" href="#" data-toggle="modal" data-target="#productModal" class="view_item">
+													<i class="flaticon-symbols"></i>
+												</a>
+											</li>
+											<li>
+												<a title="Like" href="#">
+													<i class="flaticon-favorite-heart-button"></i>
+												</a>
+											</li>
+										</ul>
 									</div>
-								<div class="overlay-content">
-									<p>Duis autem vel eum iriure dolor in henrit  in tate velit esse</p>
-									<ul>
-										<li>
-											<a title="Add to cart" href="#">
-												<i class="flaticon-commerce"></i>
-											</a>
-										</li>
-										<li>
-											<a title="Quick View" href="#" data-toggle="modal" data-target="#productModal">
-												<i class="flaticon-symbols"></i>
-											</a>
-										</li>
-										<li>
-											<a title="Like" href="#">
-												<i class="flaticon-favorite-heart-button"></i>
-											</a>
-										</li>
-										<li>
-											<a title="Refresh" href="#">
-												<i class="flaticon-refresh-button"></i>
-											</a>
-										</li>
-									</ul>
-								</div>
-								</div>
-								<div class="price-box">
-									<span class="old-price">$200</span>
-									<span class="price">$160</span>
+									</div>
+									<div class="price-box">
+										<?php if ($value->discount == 0): ?>
+											<span class="price"><?php echo number_format($value->price) . ' đ' ?></span>
+										<?php else: ?>
+											<span class="old-price"><?php echo number_format($value->price) . ' đ' ?></span>
+											<span class="price"><?php echo number_format($value->price - $value->price*$value->discount/100) . ' đ' ?></span>
+										<?php endif ?>
+									</div>
 								</div>
 							</div>
-						</div>
-						<!-- Single Product -->
-						<!-- Single Product -->
-						<div class="col-md-12 col-left-right">
-							<div class="single-product">
-								<div class="product-titel">
-									<h4><a href="#">Eletria ostma</a></h4>
-									<div class="rating-box">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-									</div>
-								</div>
-								<div class="box-content">
-									<div class="product-img">
-										<a href="#"><img src="img/product/arival-pro-6.jpg" alt="" /></a>
-									</div>
-								<div class="overlay-content">
-									<p>Duis autem vel eum iriure dolor in henrit  in tate velit esse</p>
-									<ul>
-										<li>
-											<a title="Add to cart" href="#">
-												<i class="flaticon-commerce"></i>
-											</a>
-										</li>
-										<li>
-											<a title="Quick View" href="#" data-toggle="modal" data-target="#productModal">
-												<i class="flaticon-symbols"></i>
-											</a>
-										</li>
-										<li>
-											<a title="Like" href="#">
-												<i class="flaticon-favorite-heart-button"></i>
-											</a>
-										</li>
-										<li>
-											<a title="Refresh" href="#">
-												<i class="flaticon-refresh-button"></i>
-											</a>
-										</li>
-									</ul>
-								</div>
-								</div>
-								<div class="price-box">
-									<span class="old-price">$200</span>
-									<span class="price">$160</span>
-								</div>
-							</div>
-						</div>
-						<!-- Single Product -->
-						<!-- Single Product -->
-						<div class="col-md-12 col-left-right">
-							<div class="single-product">
-								<div class="product-titel">
-									<h4><a href="#">Eletria ostma</a></h4>
-									<div class="rating-box">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-									</div>
-								</div>
-								<div class="box-content">
-									<div class="product-img">
-										<a href="#"><img src="img/product/arival-pro-2.jpg" alt="" /></a>
-									</div>
-								<div class="overlay-content">
-									<p>Duis autem vel eum iriure dolor in henrit  in tate velit esse</p>
-									<ul>
-										<li>
-											<a title="Add to cart" href="#">
-												<i class="flaticon-commerce"></i>
-											</a>
-										</li>
-										<li>
-											<a title="Quick View" href="#" data-toggle="modal" data-target="#productModal">
-												<i class="flaticon-symbols"></i>
-											</a>
-										</li>
-										<li>
-											<a title="Like" href="#">
-												<i class="flaticon-favorite-heart-button"></i>
-											</a>
-										</li>
-										<li>
-											<a title="Refresh" href="#">
-												<i class="flaticon-refresh-button"></i>
-											</a>
-										</li>
-									</ul>
-								</div>
-								</div>
-								<div class="price-box">
-									<span class="old-price">$200</span>
-									<span class="price">$160</span>
-								</div>
-							</div>
-						</div>
-						<!-- Single Product -->
-						<!-- Single Product -->
-						<div class="col-md-12 col-left-right">
-							<div class="single-product">
-								<div class="product-titel">
-									<h4><a href="#">Eletria ostma</a></h4>
-									<div class="rating-box">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-									</div>
-								</div>
-								<div class="box-content">
-									<div class="product-img">
-										<a href="#"><img src="img/product/arival-pro-3.jpg" alt="" /></a>
-									</div>
-								<div class="overlay-content">
-									<p>Duis autem vel eum iriure dolor in henrit  in tate velit esse</p>
-									<ul>
-										<li>
-											<a title="Add to cart" href="#">
-												<i class="flaticon-commerce"></i>
-											</a>
-										</li>
-										<li>
-											<a title="Quick View" href="#" data-toggle="modal" data-target="#productModal">
-												<i class="flaticon-symbols"></i>
-											</a>
-										</li>
-										<li>
-											<a title="Like" href="#">
-												<i class="flaticon-favorite-heart-button"></i>
-											</a>
-										</li>
-										<li>
-											<a title="Refresh" href="#">
-												<i class="flaticon-refresh-button"></i>
-											</a>
-										</li>
-									</ul>
-								</div>
-								</div>
-								<div class="price-box">
-									<span class="old-price">$200</span>
-									<span class="price">$160</span>
-								</div>
-							</div>
-						</div>
-						<!-- Single Product -->
-						<!-- Single Product -->
-						<div class="col-md-12 col-left-right">
-							<div class="single-product">
-								<div class="product-titel">
-									<h4><a href="#">Eletria ostma</a></h4>
-									<div class="rating-box">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-									</div>
-								</div>
-								<div class="box-content">
-									<div class="product-img">
-										<a href="#"><img src="img/product/arival-pro-4.jpg" alt="" /></a>
-									</div>
-								<div class="overlay-content">
-									<p>Duis autem vel eum iriure dolor in henrit  in tate velit esse</p>
-									<ul>
-										<li>
-											<a title="Add to cart" href="#">
-												<i class="flaticon-commerce"></i>
-											</a>
-										</li>
-										<li>
-											<a title="Quick View" href="#" data-toggle="modal" data-target="#productModal">
-												<i class="flaticon-symbols"></i>
-											</a>
-										</li>
-										<li>
-											<a title="Like" href="#">
-												<i class="flaticon-favorite-heart-button"></i>
-											</a>
-										</li>
-										<li>
-											<a title="Refresh" href="#">
-												<i class="flaticon-refresh-button"></i>
-											</a>
-										</li>
-									</ul>
-								</div>
-								</div>
-								<div class="price-box">
-									<span class="old-price">$200</span>
-									<span class="price">$160</span>
-								</div>
-							</div>
-						</div>
-						<!-- Single Product -->
-						<!-- Single Product -->
-						<div class="col-md-12 col-left-right">
-							<div class="single-product">
-								<div class="product-titel">
-									<h4><a href="#">Eletria ostma</a></h4>
-									<div class="rating-box">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-									</div>
-								</div>
-								<div class="box-content">
-									<div class="product-img">
-										<a href="#"><img src="img/product/arival-pro-1.jpg" alt="" /></a>
-									</div>
-								<div class="overlay-content">
-									<p>Duis autem vel eum iriure dolor in henrit  in tate velit esse</p>
-									<ul>
-										<li>
-											<a title="Add to cart" href="#">
-												<i class="flaticon-commerce"></i>
-											</a>
-										</li>
-										<li>
-											<a title="Quick View" href="#" data-toggle="modal" data-target="#productModal">
-												<i class="flaticon-symbols"></i>
-											</a>
-										</li>
-										<li>
-											<a title="Like" href="#">
-												<i class="flaticon-favorite-heart-button"></i>
-											</a>
-										</li>
-										<li>
-											<a title="Refresh" href="#">
-												<i class="flaticon-refresh-button"></i>
-											</a>
-										</li>
-									</ul>
-								</div>
-								</div>
-								<div class="price-box">
-									<span class="old-price">$200</span>
-									<span class="price">$160</span>
-								</div>
-							</div>
-						</div>
-						<!-- Single Product -->
+							<!-- Single Product -->
+						<?php endforeach ?>
 					</div>
 				</div>
 			</div>

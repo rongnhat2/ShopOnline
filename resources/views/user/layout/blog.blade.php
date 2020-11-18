@@ -3,7 +3,7 @@
 		<div class="blog-area">
 			<div class="container">
 				<div class="section-titel">
-					<h3>FOR THE BLOG</h3>
+					<h3>BLOG VỀ CHÚNG TÔi</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor psum dolor sit ame</p>
 				</div>
 				<div class="row custom-row">

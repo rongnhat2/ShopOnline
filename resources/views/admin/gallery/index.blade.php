@@ -25,7 +25,7 @@
             </div>
         </div>
         @endif
-        <div class="col-12 grid-margin stretch-card">
+        <div class="offset-md-9 col-3 grid-margin stretch-card">
             <div class="card">
                 <a href="{{ route('gallery.create') }}" type="button" class="btn btn-primary">Thêm Ảnh Mới</a>
             </div>
@@ -37,7 +37,7 @@
                     <p class="card-text">
                         Click để copy đường dẫn ảnh
                     </p>
-                    <div id="lightgallery" class="row lightGallery">
+                    <div class="row lightGallery gallery_wrapper">
                         <?php foreach ($gallery as $key => $value): ?>
                             <div class="image-tile" onclick="showSwal('copy-clipboard')">
                                 <div class="image_url">

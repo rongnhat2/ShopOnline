@@ -9,6 +9,7 @@
 	/*visibility: hidden;*/
 	position: absolute;
 	z-index: -1;
+	width: 100%;
 }
 .form-group .input_form{
 	position: relative;
@@ -53,5 +54,10 @@
 .auth form .auth-form-btn{
 	color: #fff;
 }
-
-
+.gallery_wrapper .image-tile{
+	flex: 0 0 12.5%;
+	padding: 0 5px;
+}
+.form-control{
+	border: 1px solid #7571f9;
+}

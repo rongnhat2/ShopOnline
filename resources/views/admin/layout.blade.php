@@ -33,8 +33,8 @@
         <!-- partial:partials/_navbar.html -->
         <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
             <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-                <a class="navbar-brand brand-logo" href=""><img src="{{ asset('images/logo_main.png') }}" alt="Đạt Không Chín" /></a>
-                <a class="navbar-brand brand-logo-mini" href=""><img src="{{ asset('images/logo_main.png') }}" alt="Đ" /></a>
+                <a class="navbar-brand brand-logo" href=""><img src="{{ asset('img/home-one/logo.png') }}" alt="Logo Shop" /></a>
+                <a class="navbar-brand brand-logo-mini" href=""><img src="{{ asset('img/home-one/logo.png') }}" alt="LS" /></a>
             </div>
             <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
                 <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
@@ -108,10 +108,49 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('product.index') }}">
+                        <a class="nav-link" data-toggle="collapse" href="#item" aria-expanded="false" aria-controls="item">
                             <i class="mdi mdi-codepen menu-icon"></i>
                             <span class="menu-title">Sản phẩm</span>
+                            <i class="menu-arrow"></i>
                         </a>
+                        <div class="collapse" id="item">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"><a class="nav-link" href="{{ route('item_description.indexCategory') }}">Danh mục</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{ route('item_description.indexComposition') }}">Chất liệu</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{ route('item_description.indexStyle') }}">Phong cách</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{ route('item_description.indexProperty') }}">Thuộc tính</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{ route('item_description.indexColor') }}">Màu</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{ route('item_description.indexSize') }}">Kích cỡ</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{ route('item.index') }}">Danh sách sản phẩm</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#layout" aria-expanded="false" aria-controls="layout">
+                            <i class="mdi mdi-cellphone-screenshot menu-icon"></i>
+                            <span class="menu-title">Giao diện</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="layout">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"><a class="nav-link" href="">Thông tin liên hệ</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{ route('carousel.index') }}">Carousel</a></li>
+                                <li class="nav-item"><a class="nav-link" href="">Sản phẩm nổi bật</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#user" aria-expanded="false" aria-controls="user">
+                            <i class="mdi mdi-human menu-icon"></i>
+                            <span class="menu-title">Phân Quyền Admin</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="user">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"><a class="nav-link" href="{{ route('user.index') }}">Danh Sách Admin</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{ route('role.index') }}">Chức Vụ</a></li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
             </nav>

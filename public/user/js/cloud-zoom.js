@@ -374,7 +374,9 @@
                     // Change the biglink to point to the new big image.
                     $('#' + data.useZoom).attr('href', event.data.attr('href'));
                     // Change the small image to point to the new small image.
-                    $('#' + data.useZoom + ' img').attr('src', event.data.data('relOpts').smallImage);
+                    // $('#' + data.useZoom + ' img').attr('src', event.data.data('relOpts').smallImage);
+                    $('#' + data.useZoom + ' img').attr('src', event.data.attr('href'));
+
                     // Init a new zoom with the new images.
                     $('#' + event.data.data('relOpts').useZoom).CloudZoom();
                     return false;

@@ -8,8 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico in the root directory -->
-		<link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+		<!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+        <link rel="shortcut icon" type="image/x-icon" href="{{ asset('img/favicon.ico') }}">
 		
 		<!-- Google Font -->
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>

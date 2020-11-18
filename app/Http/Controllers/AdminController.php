@@ -8,9 +8,9 @@ use Illuminate\Support\Facades\Auth;
 use Session;
 use Hash;
 use DB;
-use App\Role;
-use App\User;
-use App\Customer;
+use App\Models\Role;
+use App\Models\User;
+use App\Models\Customer;
 
 class AdminController extends Controller
 {
@@ -112,12 +112,14 @@ class AdminController extends Controller
 
                         return redirect()->route('home');
                     } else {
+                        
                         // Kiểm tra không đúng sẽ hiển thị thông báo lỗi
                         Session::flash('error', 'Email hoặc mật khẩu không đúng!');
                         return redirect()->back();
                     }
                 }
         } catch (\Exception $exception) {
+            dd($exception);
             return redirect()->to('/login');
         }
     }

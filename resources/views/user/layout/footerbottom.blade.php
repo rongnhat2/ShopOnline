@@ -26,7 +26,7 @@
 					</div>
 					<div class="col-md-4 col-sm-12 col-xs-12">
 						<div class="footer-btm-img">
-							<img src="img/icon/payment.png" alt="" />
+							<img src="{{ asset('img/icon/payment.png') }}" alt="" />
 						</div>
 					</div>
 				</div>

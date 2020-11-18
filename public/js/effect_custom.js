@@ -92,3 +92,7 @@ $('.image_loader').on('click', function(){
 
 })    
 
+
+$('.dropify-clear').on('click', function(){
+    $('#lightgallery').find('.image-tile').remove()
+})
