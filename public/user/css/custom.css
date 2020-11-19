@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 @import "component/I-login.css";
+@import "component/I-purchase.css";
 @import "component/responsive.css";
 
 header{
@@ -263,20 +264,8 @@ main{
   width: 100%;
   height: 360px;
 }
-.logo-area{
-  width: 90px;
-  padding: 0;
-}
 .mainmenu ul#nav > li > a{
   padding: 40px 12px;
-}
-.custom_logo_position{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.image_footer img{
-  width: 90px;
 }
 .product-img .image_wrapper{
   width: 100%;

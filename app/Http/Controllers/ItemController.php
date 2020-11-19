@@ -12,7 +12,7 @@ class ItemController extends Controller
     public function index(){
     	$items = DB::table('items')->get();
             // ->leftjoin('image', 'carousel.image_id', '=', 'image.id')
-        return view('admin.item.index', compact('items', 'categories'));
+        return view('admin.item.index', compact('items'));
     }
     public function create(){
     	$categories = DB::table('categories')->get();

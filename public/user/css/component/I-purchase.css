@@ -1,0 +1,33 @@
+.I-purchase{
+	width: 100%;
+	background-color: #f5f5f5;
+}
+.I-purchase .purchase_wrapper{
+	padding: 30px 0;
+}
+.I-purchase .purchase_wrapper .navigation_wrapper{
+	width: 100%;
+}
+.I-purchase .purchase_wrapper .navigation_wrapper a{
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+.I-purchase .purchase_wrapper .navigation_wrapper .icon{
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 10px 0 0;
+}	
+.I-purchase .purchase_wrapper .navigation_wrapper .icon.user{
+	background-color: #ffc107;
+}
+.I-purchase .purchase_wrapper .navigation_wrapper{
+	width: 100%;
+}
+
+

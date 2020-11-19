@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'FrontController@index')->name('customer.index');
 Route::get('product-detail/{slug}', 'FrontController@product_detail')->name('customer.product_detail');
 Route::get('shop-list/{slug}', 'FrontController@shop_list')->name('customer.shop_list');
+Route::get('purchase', 'FrontController@purchase')->name('customer.purchase');
 
 
 Route::get('/customer-login', 'FrontController@login')->name('customer.login');

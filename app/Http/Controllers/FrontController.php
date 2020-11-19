@@ -179,6 +179,18 @@ class FrontController extends Controller
     }
 
     /**
+     * Function get data and Show the user purchase..
+     *
+     * @return view purchase
+     */
+    public function purchase(){
+        // danh mục sản phẩm
+        $categories = DB::table('categories')->get();
+
+        return view('user.purchase', compact('categories'));
+    }
+
+    /**
      * Function get data and Show the user login..
      *
      * @return view login

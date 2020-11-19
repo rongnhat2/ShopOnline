@@ -11,6 +11,7 @@
 		<!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
         <link rel="shortcut icon" type="image/x-icon" href="{{ asset('img/favicon.ico') }}">
 		
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"></i>
 		<!-- Google Font -->
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 		<!-- style css -->
